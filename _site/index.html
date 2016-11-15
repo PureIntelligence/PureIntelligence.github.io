@@ -1,300 +1,172 @@
 <!DOCTYPE html>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="theme-color" content="hsl(35, 36%, 95%)">
+  <title>On Software Engineering, Mathematics<br>and Philosophy</title>
 
-<head>
-	<title></title>
-	<!-- Begin Jekyll SEO tag v2.4.0 -->
-<title>Home</title>
-<meta property="og:title" content="Home" />
-<meta name="description" content="A responsive site template designed by HTML5 Up and released under the Creative Commons." />
-<meta property='og:description' content="A responsive site template designed by HTML5 Up and released under the Creative Commons." />
-<link rel="canonical" href="https://PureIntelligence.github.io/" />
-<meta property='og:url' content='https://PureIntelligence.github.io/' />
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@andrewbanchich" />
-<meta name="twitter:title" content="Home" />
-<meta name="twitter:description" content="A responsive site template designed by HTML5 Up and released under the Creative Commons." />
-<meta property="article:publisher" content="" />
-<meta property="fb:app_id" content="" />
-<!-- End Jekyll SEO tag -->
-	<link type="application/atom+xml" rel="alternate" href="https://PureIntelligence.github.io/feed.xml" title="" />
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<!--[if lte IE 8]><script src="https://PureIntelligence.github.io/assets/js/ie/html5shiv.js"></script><![endif]-->
-	<link rel="stylesheet" href="https://PureIntelligence.github.io/assets/css/main.css" />
-	<!--[if lte IE 9]><link rel="stylesheet" href="https://PureIntelligence.github.io/assets/css/ie9.css" /><![endif]-->
-	<!--[if lte IE 8]><link rel="stylesheet" href="https://PureIntelligence.github.io/assets/css/ie8.css" /><![endif]-->
+  
+  <meta name="description" content="This is a blog about software, some mathematics, and the occasional philosophy. Not necessarily in that order." />
+
+  
+  <meta name="keywords" content="Software Engineering, Mathematics, Philosophy, Scala, Epistemology, Existentialism, Programming, Machine-Learning, Artificial Intelligence, Statistics, Probability, Puzzles" />
+
+  <link rel="canonical" href="http://localhost:4000/">
+  <link rel="alternate" type="application/rss+xml" title="On Software Engineering, Mathematics<br>and Philosophy" href="http://localhost:4000/feed.xml" />
+  <span itemprop='author'><meta name="author" content="Hugo Sereno Ferreira"><span itemprop='author'></span>
+
+  <link href="/favicon.png" rel="icon">
+  <link rel="stylesheet" href="//brick.a.ssl.fastly.net/PT+Serif:400,400i,700,700i:f">
+  <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Source+Code+Pro:400,600:f">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/main.css">
+
+  <script type="text/javascript">
+    window.MathJax = {
+      tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+        displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+        processEscapes: true
+      },
+
+      TeX: {
+        equationNumbers: { autoNumber: "AMS" }
+      },
+
+      CommonHTML: {
+        scale: 90
+      }
+    };
+  </script>
+  <script type="text/javascript" async
+src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-69060-5', 'auto');
+    ga('send', 'pageview');
+  </script>
 </head>
 
-<body>
-
-    <!-- Wrapper -->
-<div id="wrapper">
-
-<!-- Header -->
-<header id="header" class="alt">
-	<a href="https://PureIntelligence.github.io" class="logo"><strong>Forty</strong> <span>by HTML5 UP</span></a>
-	<nav>
-		<a href="#menu">Menu</a>
-	</nav>
-</header>
-
-<!-- Menu -->
-<nav id="menu">
-	<ul class="links">
-        
-		    
-		
-		    
-		
-		    
-		        <li><a href="/">Home</a></li>
-	    	
-		
-		    
-		
-		
-		    
-		        <li><a href="/elements.html">Elements</a></li>
-		    
-		
-		    
-		        <li><a href="/generic.html">Generic</a></li>
-		    
-		
-		    
-		
-		    
-		        <li><a href="/landing.html">Landing</a></li>
-		    
-		
-	</ul>
-	<ul class="actions vertical">
-		<li><a href="#" class="button special fit">Get Started</a></li>
-		<li><a href="#" class="button fit">Log In</a></li>
-	</ul>
-</nav> <!-- Banner -->
-<section id="banner" class="major">
-	<div class="inner">
-		<header class="major">
-			<h1>Hi, my name is Forty</h1>
-		</header>
-		<div class="content">
-			<p style="text-transform: uppercase;">A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.</p>
-			<ul class="actions">
-				<li><a href="#one" class="button next scrolly">Get Started</a></li>
-			</ul>
-		</div>
-	</div>
-</section>
-
-<!-- Main -->
-<div id="main">
-
-<!-- One -->
-<section id="one" class="tiles">
-	
-	
-        <article>
-                <span class="image">
-                        <img src="assets/images/pic01.jpg" alt="" />
-                </span>
-                <header class="major">
-                        <h3><a href="/2016/08/25/aliquam.html" class="link">Aliquam</a></h3>
-                        <p>Ipsum dolor sit amet</p>
-                </header>
-        </article>
-	
-	
-	
-        <article>
-                <span class="image">
-                        <img src="assets/images/pic02.jpg" alt="" />
-                </span>
-                <header class="major">
-                        <h3><a href="/2016/08/24/tempus.html" class="link">Tempus</a></h3>
-                        <p>Feugiat amet tempus</p>
-                </header>
-        </article>
-	
-	
-	
-        <article>
-                <span class="image">
-                        <img src="assets/images/pic03.jpg" alt="" />
-                </span>
-                <header class="major">
-                        <h3><a href="/2016/08/23/magna.html" class="link">Magna</a></h3>
-                        <p>Lorem etiam nullam</p>
-                </header>
-        </article>
-	
-	
-	
-        <article>
-                <span class="image">
-                        <img src="assets/images/pic04.jpg" alt="" />
-                </span>
-                <header class="major">
-                        <h3><a href="/2016/08/22/ipsum.html" class="link">Ipsum</a></h3>
-                        <p>Nisl sed aliquam</p>
-                </header>
-        </article>
-	
-	
-	
-        <article>
-                <span class="image">
-                        <img src="assets/images/pic05.jpg" alt="" />
-                </span>
-                <header class="major">
-                        <h3><a href="/2016/08/21/consequat.html" class="link">Consequat</a></h3>
-                        <p>Ipsum dolor sit amet</p>
-                </header>
-        </article>
-	
-	
-	
-        <article>
-                <span class="image">
-                        <img src="assets/images/pic06.jpg" alt="" />
-                </span>
-                <header class="major">
-                        <h3><a href="/2016/08/20/etiam.html" class="link">Etiam</a></h3>
-                        <p>Feugiat amet tempus</p>
-                </header>
-        </article>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-</section>
-
-
-<!-- Two -->
-<section id="two">
-	<div class="inner">
-		<header class="major">
-			<h2>Massa libero</h2>
-		</header>
-		<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
-		<ul class="actions">
-			<li><a href="landing.html" class="button next">Get Started</a></li>
-		</ul>
-	</div>
-</section>
-
+  <body>
+    <div class="container main">
+  <div class="row">
+    <header>
+      <div><center><h1>On Software Engineering, Mathematics<br>and Philosophy</h1></center></div>
+      <center>
+        <span class="big-ornament">
+          <svg viewBox="310 350 400 350">
+            <path d="M24.403,568.588c44.369-42.193,98.197-60.552,155.345-66.541
+          		c66.447-6.884,174.35,3.493,387.062,60.889c99.271,26.832,204.424,52.25,308.648,46.676c27.17-1.396,62.652-4.395,84.24-21.916
+          		c15.361-12.389,21.846-31.809,15.269-44.855c-4.483,14.617-16.188,29.406-37.445,41.943c-57.07,33.639-135.297,6.318-153.995-2.488
+          		c-51.001-23.928-78.822-61.809-82.731-98.845c-5.244-48.926,42.029-83.403,105.159-67.616c20.74,5.239,37.366,14.2,49.4,24.421
+          		c35.993,30.489,7.245,63.216-17.765,58.476c-0.416-0.087-1.146-0.747,0.164-1.084c6.406-0.742,13.542-6.061,16.117-14.283
+          		c4.663-14.699-3.07-29.32-17.199-40.871c-29.156-23.833-73.335-35.467-106.816-12.458c-10.551,7.234-15.621,16.615-18.267,25.913
+          		c-3.744,13.212-1.664,27.091,4.819,40.621c11.964,24.999,33.638,44.53,56.977,59.389c28.409,18.189,59.888,28.912,89.302,32.492
+          		c14.46,1.648,29.477,1.734,43.852-0.598c-21.259-35.545,12.37-63.043,35.058-65.527c14.192-1.5,25.654,2.084,33.292,8.883
+          		c1.907-19.438-12.206-36.296-38.457-47.015c-7.638-2.571-4.475-10.135,3.423-7.469c27.725,9.878,39.188,34.552,37.036,56.398
+          		c10.621,11.211,12.033,29.406,0.069,47.838c-7.301,11.219-20.347,22.42-37.357,30.066c-38.042,14.209-85.143,19.783-129.243,17.615
+          		c-71.688-1.57-177.098-30.818-285.813-58.059C391.966,537.266,158.074,467.333,24.403,568.588L24.403,568.588z M715.083,587.184
+          		c-46.504-11.453-95.778-78.15-144.198-44.594C591.555,554.717,669.388,573.643,715.083,587.184L715.083,587.184z M783.362,591.84
+          		c-46.268-11.955-89.043-82.304-127.751-68.602C663.657,566.846,735.014,590.6,783.362,591.84L783.362,591.84z M973.317,540.014
+          		c-4.984-6.979-14.467-11.539-29.231-10.959c-6.563,0.252-16.611,3.895-22.932,10.379c-10.463,10.715-13.462,28.652,5.566,43.189
+          		c11.532-4.16,22.341-10.299,31.494-19.107C965.759,556.201,970.909,548.232,973.317,540.014z"/>
+        		<path d="M24.403,563.689c44.369-42.193,98.197-60.551,155.345-66.537
+        			c66.447-6.982,174.35,3.49,387.062,60.893c99.271,26.824,204.424,52.242,308.648,46.668c27.17-1.396,62.652-4.395,84.24-21.916
+        			c25.409-20.615,26.579-60.234-15.613-58.641c-6.563,0.252-16.611,3.807-22.932,10.377c-10.629,10.795-13.534,28.982,6.146,43.695
+        			c-6.979,4.309-17.457,6.641-19.845,6.146c-23.182-36.221,11.123-64.465,34.141-66.949c37.107-4,55.892,27.07,35.363,58.635
+        			c-7.301,11.219-20.347,22.436-37.357,30.066c-38.042,14.207-85.143,19.766-129.243,17.617
+        			c-71.688-1.588-177.098-30.822-285.813-58.061C391.966,532.289,158.074,462.436,24.403,563.689z"/>
+        		<path d="M974.552,529.307c-1.398,10.205-6.973,20.348-16.337,29.312
+        			c-25.019,24.004-61.897,28.902-95.527,24.836c-29.414-3.484-60.893-14.207-89.302-32.404
+        			c-23.339-14.859-45.013-34.383-56.977-59.381c-6.483-13.542-8.563-27.408-4.819-40.62c2.646-9.299,7.716-18.691,18.267-25.917
+        			c33.481-23.001,77.66-11.375,106.816,12.458c14.129,11.556,21.862,26.177,17.199,40.875c-2.575,8.223-9.711,13.537-16.117,14.283
+        			c-1.31,0.341-0.58,0.998-0.164,1.083c25.01,4.729,53.758-27.997,17.765-58.479c-12.034-10.22-28.66-19.193-49.4-24.418
+        			c-63.13-15.786-110.403,18.688-105.159,67.617c3.909,37.052,31.73,74.917,82.731,98.837c18.698,8.814,96.925,36.125,153.995,2.496
+        			c25.583-15.033,37.366-33.309,39.273-50.752c2.496-22.093-8.87-47.261-36.941-57.309c-7.897-2.665-11.061,4.816-3.423,7.469
+        			C964.024,490.594,978.224,508.527,974.552,529.307z"/>
+        		<path d="M783.362,586.941c-48.349-1.24-119.705-24.994-127.751-68.602
+        			C694.319,504.626,737.095,574.986,783.362,586.941z"/>
+        		<path d="M715.083,582.295c-45.695-13.551-123.528-32.477-144.198-44.605
+        			C619.305,504.135,668.579,570.832,715.083,582.295z"/>
+          </svg>
+        </span>
+      </center>
+    </header>
+  </div>
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="col-md-8 offset-md-2">
+      
+      
+      <h3>On Mathematics</h3>
+      <p> 
+            <a href=""></a>
+          
+            <a href="/blog/2016/05/28/sleeping-beauty/">Sleeping Beauty</a>
+           </p>
+      
+    </div>
+  </div>
 </div>
 
- <!-- Contact -->
-<section id="contact">
-	<div class="inner">
-		<section>
-			<form action="https://formspree.io/youremailaddress@gmail.com" method="POST">
-				<div class="field half first">
-					<label for="name">Name</label>
-					<input type="text" name="name" id="name" />
-				</div>
-				<div class="field half">
-					<label for="email">Email</label>
-					<input type="text" name="_replyto" id="email" />
-				</div>
-				<div class="field">
-					<label for="message">Message</label>
-					<textarea name="message" id="message" rows="6"></textarea>
-				</div>
-				<ul class="actions">
-					<li><input type="submit" value="Send Message" class="special" /></li>
-					<li><input type="reset" value="Clear" /></li>
-				</ul>
-			</form>
-		</section>
-		<section class="split">
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-envelope"></span>
-					<h3>Email</h3>
-					<a href="#">youremailaddress@gmail.com</a>
-				</div>
-			</section>
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-phone"></span>
-					<h3>Phone</h3>
-					<span>(716) 555-5555</span>
-				</div>
-			</section>
-			<section>
-				<div class="contact-method">
-					<span class="icon alt fa-home"></span>
-					<h3>Address</h3>
-					<span>1234 Somewhere Road<br />
-					Nashville, TN 55555<br />
-					United States of America</span>
-				</div>
-			</section>
-		</section>
-	</div>
-</section>
+    <footer>
+  <div class="container">
+    <div class="row biography">
+      <div class="col-sm-4">
+        <h2>who am i</h2>
+        <p>I am a Professor of Software Engineering at the <a href='http://www.fe.up.pt'>Faculty of Engineering</a>, University of Porto and Senior Researcher at <a href='https://www.inesctec.pt'>INESC TEC</a>. Here you can find my <a href='/assets/thesis.pdf'>PhD Thesis</a> and my <a href='/assets/cv.pdf'>Résumé</a>.</p>
+      </div>
+      <div class="col-sm-4">
+        <h2>what is this</h2>
+        <p>This is a blog about software, some mathematics, and the occasional philosophy. Not necessarily in that order.</p>
+      </div>
+      <div class="col-sm-4">
+        <h2>where am i</h2>
+          
+          
+          <div>
+            <a href="https://github.com/hugoferreira">
+              <span class="username">github//hugoferreira</span>
+            </a>
+          </div>
+          
+          
+          <div>
+            <a href="https://twitter.com/ferreira_hugo">
+              <span class="username">twitter//ferreira_hugo</span>
+            </a>
+          </div>
+          
+          
+          <div>
+            <a href="https://id.linkedin.com/in/hugoserenoferreira">
+              <span class="username">linkedin//hugoserenoferreira</span>
+            </a>
+          </div>
+          
+          
+          <div>
+            <a href="https://www.facebook.com/hugo.sereno.ferreira">
+              <span class="username">facebook//hugo.sereno.ferreira</span>
+            </a>
+          </div>
+          
+      </div>
+    </div>
+    
+    <div class="row copyright">
+      <center>© MMXIII — MMXVI by Hugo Sereno Ferreira.<br>Content available under <a href='http://creativecommons.org/licenses/by-nc-sa/4.0/'>Creative Commons (BY-NC-SA)</a> unless otherwise noted.<br>This site is hosted at <a href='https://pages.github.com/'>Github Pages</a> and created with <a href='http://jekyllrb.com/'>Jekyll</a>.</center>
+    </div>
+    
+  </div>
+</footer>
 
-<!-- Footer -->
-	<footer id="footer">
-		<div class="inner">
-			<ul class="icons">
-				
-				<li><a href="https://twitter.com/andrewbanchich" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
-				
-				
-				<li><a href="https://plus.google.com/u/0/+AndrewBanchich" class="icon alt fa-google-plus" target="_blank"><span class="label">Google+</span></a></li>
-				
-				
-				
-				<li><a href="https://instagram.com" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
-				
-				
-				
-				
-				<li><a href="https://gitlab.com/u/andrewbanchich" class="icon alt fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li>
-				
-				
-				
-				
-				<li><a href="https://www.linkedin.com/in/andrew-banchich-a4ba1195" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
-				
-			</ul>
-			<ul class="copyright">
-				<li>&copy; Forty by HTML5 UP</li>
-				<li>Design: <a href="https://html5up.net" target="_blank">HTML5 UP</a></li>
-				<li>Jekyll integration: <a href="http://andrewbanchi.ch" target="_blank">Andrew Banchich</a></li>
-				
-			</ul>
-		</div>
-	</footer>
-
-</div>
-
-<!-- Scripts -->
-	<script src="https://PureIntelligence.github.io/assets/js/jquery.min.js"></script>
-	<script src="https://PureIntelligence.github.io/assets/js/jquery.scrolly.min.js"></script>
-	<script src="https://PureIntelligence.github.io/assets/js/jquery.scrollex.min.js"></script>
-	<script src="https://PureIntelligence.github.io/assets/js/skel.min.js"></script>
-	<script src="https://PureIntelligence.github.io/assets/js/util.js"></script>
-	<!--[if lte IE 8]><script src="https://PureIntelligence.github.io/assets/js/ie/respond.min.js"></script><![endif]-->
-	<script src="https://PureIntelligence.github.io/assets/js/main.js"></script>
-
-
-</body>
-
+  </body>
 </html>
